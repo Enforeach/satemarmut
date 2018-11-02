@@ -46,6 +46,17 @@ body{
   font-size: 20px;
 }
 
+.sempel-1 {
+  font-weight: bold;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 3.5px 50px 3.5px 50px;
+  background-color: rgba(163, 220, 181, .5);
+  color: white;
+}
+
 .gallery{
   width: 80px;
   margin: auto;
