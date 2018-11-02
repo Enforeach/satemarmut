@@ -1,0 +1,129 @@
+/*Start Overlay*/
+.overlay {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: .9s;
+	text-align: center;
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.8);
+}
+
+.overlay img{
+	padding: 10px;
+	max-height: 100%;
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,.5);
+}
+
+.card-recom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.name-recom{
+	position: fixed;
+	padding: 500px;
+}
+
+.name-profile{
+	color: black;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.card-1 {
+	padding-top: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	background-color: white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	max-width: 40%;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.overlay:target div.card-1{
+	animation: zooma .2s;
+}
+
+.overlay .close{
+	position: absolute;
+	left: 68%;
+	opacity: 0;
+}
+
+.overlay:target .close{
+	animation: mudun .5s .5s forwards;
+}
+
+@media only screen and (max-width: 600px){
+	.card-1 {
+	padding-top: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	background-color: white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	max-width: 50%;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+	.overlay .close{
+		position: fixed;
+		left: 70%;
+	}
+}
+
+.hmm {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.title-profile {
+	color: #787b79;
+}
+
+/*Animasi*/
+@keyframes zooma {
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes mudun {
+	0%{
+		opacity: 0;
+		margin-top: -20px;
+	}
+
+	100%{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
