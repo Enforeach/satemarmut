@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link href="data:text/css;charset=utf-8," rel="stylesheet" data-href="css/bootstrap-theme.min.css" id="bs-theme-stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CKEditor -->
+</head>
+
+
+
+<p id="back-top">
+  <a href="#top"><span style=" background: #ddd url('arrow_up.png') no-repeat center center;"></span></a>
+</p>
+<body>
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>  -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand navbar-default" href="#" ><center>FAP</center></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html" class="hvr-radial-in"><i class="glyphicon glyphicon-home"></i> <span class="sr-only">(current)</span> Home</a></li>
+          <li class="active"><a href="message.html" class="hvr-radial-in"><i class="glyphicon glyphicon-envelope"></i> Message</a></li>
+
+        </ul>
+
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group input-group">
+            <input type="text" class="form-control" placeholder="Search..">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>        
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="btn btn-demo" data-toggle="modal" data-target="#myModal2"><span class="fa fa-pencil"></span> POST</a></li>
+          <li><a href="#" class="btn btn-demo" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-user"></span> PROFILE</a></li>
+        </ul>
+      </div>
+
+      <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3 class="modal-title" id="myModalLabel2" style="font-family: Algerian"><center>PROFILE</center></h3>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row profile">
+                <div class="col-lg-13">
+                  <div class="profile-sidebar">
+                    <!-- SIDEBAR USERPIC -->
+                    <div class="profile-userpic">
+                      <img src="Images/IMG_20171105_083225.jpg" class="img-responsive" alt="Avatar">
+
+                    </div>
+                    <!-- END SIDEBAR USERPIC -->
+                    <!-- SIDEBAR USER TITLE -->
+                    <div class="profile-usertitle">
+                      <div class="profile-usertitle-name">
+                        Alf
+                      </div>
+                      <div class="profile-usertitle-job">
+                        Developer
+                      </div>
+                    </div>
+                    <!-- END SIDEBAR USER TITLE -->
+                    <!-- SIDEBAR BUTTONS -->
+                    <div class="profile-userbuttons">
+                      <button type="button" class="btn btn-success btn-sm">Follow</button>
+                      <button type="button" class="btn btn-danger btn-sm">Message</button>
+                    </div>
+                    <!-- END SIDEBAR BUTTONS -->
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                      <ul class="nav">
+                        <li class="active">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-home"></i>
+                          Overview </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="glyphicon glyphicon-user"></i>
+                          Account Settings </a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank">
+                            <i class="glyphicon glyphicon-ok"></i>
+                          Tasks </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="glyphicon glyphicon-flag"></i>
+                          Help </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- END MENU -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+      </div><!-- modal -->
+    </div><!-- /.container-fluid -->
+
+  </div>
+</nav>
+
+<div class="container text-center" style="margin-top: 80px">    
+  <div class="row">
+
+  <div class="col-sm-12">
+    <div class="well">
+      <div class="row">
+        <div class="well">
+          <h1>Buat Artikel</h1>
+        </div>
+      </div>
+        <div class="row">
+          <div class="well">
+            <form class="form-horizontal form-label-left" method="post" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" for="title">Title <span class="required">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                          <input type="text" name="title" required="required" class="form-control col-md-7 col-xs-12" placeholder="Judul" maxlength="255" autofocus>
+                        </div>
+                      </div>
+                                            <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" for="cover">Category</label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                          <input type="text"  name="category" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" for="cover">Cover Artikel</label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                          <input type="file" accept="image/*" name="cover" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" for="content">Content <span class="required">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                          <textarea name="content" required class="form-control" id="mytextarea" rows="8" cols="40"></textarea>
+                        </div>
+                      </div>
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-3">
+                          <a href="<?= site_url('article'); ?>" name="cancel" class="btn btn-primary" role="button">Cancel</a>
+                          <button type="submit" name="save" class="btn btn-success">Post</button>
+                        </div>
+                      </div>
+                    </form>
+          </div>
+        </div>
+    </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  
+    <script src="js/ckeditor/ckeditor.js"></script>
+  <script type="text/javascript">
+   window.onscroll = function() {scrollFunction()};
+
+            CKEDITOR.replace( 'mytextarea' );
+            CKEDITOR.config.height = 700;
+   function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+  
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 440) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top a').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
+</script>
+</body>
+</html>
